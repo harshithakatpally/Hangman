@@ -1,0 +1,19 @@
+<html>
+
+	<head><title>Hangman</title>
+	</head>
+	
+	<body>
+		<h2 style="margin-top:20px;font-size:25px;color:#ff0066">Start Answering!<h2>
+		<p style="color:#ff0066;margin-left:580px;">Score:{{score}}</p>
+		<p style="color:#ff0066;">{{question}}</p>
+		<p style="color:#ff0066;font-size:20px;">Hint:{{hint}}</p>
+		<form method="post" action="/check">
+			<legend for="alphabet" style="color:#ff0066;">Enter a letter:</legend><input type="text" name="alphabet" autofocus>
+			<input type="submit" value="Check" style="background-color:#ff0066;color:white;"><br><br>
+		</form>
+		<p style="color:#ff0066;">Attempts Left:{{attempt}}</p>
+		<p style="color:#ff0066;">Guessed Letters:{{guessedlist}}</p>
+                <p style="color:#ff0066;">Vowels are already printed.Guess the remaining letters!</p>
+	</body>
+</html>
